@@ -9,9 +9,9 @@ Aplicação Mobile: Versão simplificada onde o utilizador pode registar o seu n
 Tecnologias Utilizadas
 Backend: Python 3.9+, FastAPI, SQLAlchemy, SQLite
 
-Frontend Web: React (com JavaScript), Tailwind CSS
+Frontend Web: React (com JavaScript)
 
-Mobile: React Native (com JavaScript), AsyncStorage
+Mobile: React Native (com JavaScript)
 
 Servidor API (Desenvolvimento): Uvicorn
 
@@ -33,8 +33,7 @@ Uma Aplicação Mobile (React Native) com funcionalidade de registo local.
 
 +---------------------+
 |   App Mobile        |
-|   (React Native)    |
-|   (AsyncStorage)    |
+|   (React Native)    | 
 +---------------------+
 
 Consulte o documento Plano de Projeto: App Lembrete de Água para mais detalhes sobre a arquitetura.
@@ -126,8 +125,6 @@ fastapi
 uvicorn[standard]
 sqlalchemy
 pydantic[email]
-# Para SQLite, geralmente não é necessário um driver separado com SQLAlchemy recente.
-# Se usar PostgreSQL, adicione: psycopg2-binary
 
 O banco de dados SQLite (lembrete_agua.db) será criado automaticamente na pasta backend/ na primeira execução.
 
